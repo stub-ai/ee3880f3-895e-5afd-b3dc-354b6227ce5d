@@ -1,13 +1,16 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import React from 'react';
+import Header from '../components/Header';
 
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
+const Home = () => {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-    </main>
-  )
-}
+    <div>
+      <Header />
+      <main className="p-5">
+        <h2>Welcome to the Food Purchase Tracker</h2>
+        {/* Add your components here */}
+      </main>
+    </div>
+  );
+};
+
+export default Home;
